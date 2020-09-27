@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Soundwaves</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        .jumbotron {
+        /* background-image: url(https://i.pinimg.com/originals/42/d0/0c/42d00cfaf2cedabc7eac44e94d390c49.jpg); */
+        background-size: 100% 100%;
+        height: auto;
+        margin-bottom: 0rem;
+        }
+        /*this is to set the max height for the images in the carousel*/
+        img.img-fluid {
+            max-height: 550px;
+        }
+        /*this is to change the arrows in the carousel from white to black*/
+        .carousel-control-next, .carousel-control-prev {
+        filter: invert(100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+
+                <h1 class="display-4" style="color: aliceblue;">Soundwaves</h1>
+                <p class="lead" style="color: aliceblue;">HiFi Equipment and Music Reviews</p>
+            </div>
+            <div class="col-md-6" style="text-align: left;">
+                <h1 class="display-4" style="color: aliceblue;">Soundwaves</h1>
+                <p class="lead" style="color: aliceblue;">HiFi Equipment and Music Reviews</p>
+
+            </div>
+            </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Soundwaves</a>
+             </li>
+            <li class="nav-item">
+            <a class="nav-link" href="equipment-reviews.html">Equipment Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="music-reviews.html">Music Reviews</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#myModal">
+              Contact
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Contact Me</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="row">
+                <div class="col">
+              <form > <!--action="/action_page.php" I don't have an actual place to store info yet-->
+                <div class="form-group">
+                  <label for="email">Email address:</label>
+                  <input type="email" class="form-control" placeholder="Enter email" id="email" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-group">
+                  <label for="comment">Comment:</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" data-dismiss="modal">Submit</button>
+              </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--adding padding to the bottom of the container so the footer doesn't cover content-->
+    <div class="container" style="padding-bottom: 75px;"> <!--Added data-interval=false to shut off auto-slide on the carousel-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval=false>
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active"> 
+                <a href="linton-review.html"><img class="img-fluid mx-auto d-block" src="./Assets/Images/wharfedale_linton.jpg" alt="First slide"></a>
+                <div class="carousel-caption">
+                    <h3>The Wharfedale Linton Heritage</h3>
+                    <p>Insightful without being analytical</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="img-fluid mx-auto d-block" src="./Assets/Images/Harbeth_Pair.jpg" alt="First slide">
+                <div class="carousel-caption">
+                  <h3>Harbeth C7ES3 vs P3ESR 40th</h3>
+                  <p>Worth the price?</p>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <img class="img-fluid mx-auto d-block" src="./Assets/Images/Buchardt_s400.jpg" alt="Third slide">
+                <div class="carousel-caption">
+                  <h3>Harbeth P3ESR and the Buchardt s400</h3>
+                  <p>Worth the Hype?</p>
+              </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        <div class="row">
+            <div class="col-md-2">   
+            </div>
+            <div class="col-md-8">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, felis ut dictum tristique,
+                    nibh erat feugiat libero, sit amet fringilla mauris velit in mi. Duis tempus felis vitae
+                    felis vulputate pretium. Nullam commodo, est ac auctor ornare, eros nisi fringilla sem,
+                    non pulvinar tortor lorem sit amet sem. Aenean quis erat facilisis, porttitor ex cursus,
+                    luctus enim. Curabitur et metus in lacus tristique sagittis et in lorem. Nunc id nisi et
+                    neque fringilla ultricies. Aenean at feugiat elit, a posuere justo. Pellentesque egestas
+                    dolor et nisi venenatis, nec fermentum urna fringilla. Etiam efficitur porta purus, id
+                    posuere sem congue a.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, felis ut dictum tristique,
+                   nibh erat feugiat libero, sit amet fringilla mauris velit in mi. Duis tempus felis vitae
+                      felis vulputate pretium. Nullam commodo, est ac auctor ornare, eros nisi fringilla sem,
+                      non pulvinar tortor lorem sit amet sem. Aenean quis erat facilisis, porttitor ex cursus,
+                      luctus enim. Curabitur et metus in lacus tristique sagittis et in lorem. Nunc id nisi et
+                      neque fringilla ultricies. Aenean at feugiat elit, a posuere justo. Pellentesque egestas
+                      dolor et nisi venenatis, nec fermentum urna fringilla. Etiam efficitur porta purus, id
+                      posuere sem congue a.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, felis ut dictum tristique,
+                        nibh erat feugiat libero, sit amet fringilla mauris velit in mi. Duis tempus felis vitae
+                        felis vulputate pretium. Nullam commodo, est ac auctor ornare, eros nisi fringilla sem,
+                        non pulvinar tortor lorem sit amet sem. Aenean quis erat facilisis, porttitor ex cursus,
+                        luctus enim. Curabitur et metus in lacus tristique sagittis et in lorem. Nunc id nisi et
+                        neque fringilla ultricies. Aenean at feugiat elit, a posuere justo. Pellentesque egestas
+                        dolor et nisi venenatis, nec fermentum urna fringilla. Etiam efficitur porta purus, id
+                        posuere sem congue a.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, felis ut dictum tristique,
+                          nibh erat feugiat libero, sit amet fringilla mauris velit in mi. Duis tempus felis vitae
+                          felis vulputate pretium. Nullam commodo, est ac auctor ornare, eros nisi fringilla sem,
+                          non pulvinar tortor lorem sit amet sem. Aenean quis erat facilisis, porttitor ex cursus,
+                          luctus enim. Curabitur et metus in lacus tristique sagittis et in lorem. Nunc id nisi et
+                          neque fringilla ultricies. Aenean at feugiat elit, a posuere justo. Pellentesque egestas
+                          dolor et nisi venenatis, nec fermentum urna fringilla. Etiam efficitur porta purus, id
+                          posuere sem congue a.
+                </p>
+            </div>            
+            <div class="col-md-2"></div>        
+        </div>
+    </div>
+    
+    <nav class="navbar fixed-bottom navbar-dark bg-dark d-none d-sm-block">
+        <a class="navbar-brand" href="#">Terms and conditions - enjoy music</a>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
